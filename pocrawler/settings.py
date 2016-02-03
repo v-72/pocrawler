@@ -37,8 +37,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'pocrawl'
+    'pocrawl',
+    'djcelery',
+    'kombu.transport.django',
 ]
+
+import djcelery
+djcelery.setup_loader()
+BROKER_URL = "django://"
 
 MIDDLEWARE_CLASSES = [
     'django.middleware.security.SecurityMiddleware',
