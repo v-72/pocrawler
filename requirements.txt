@@ -112,7 +112,7 @@ queuelib==1.4.2
 readability==0.2
 redis==2.10.5
 reportbug==6.5.0
-reportlab==2.6
+reportlab==3.5.55
 requests==2.2.1
 rhythmbox-ubuntuone==13.10
 scipy==0.13.3
